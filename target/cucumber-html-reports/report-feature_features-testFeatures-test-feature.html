@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: features/testFeatures/test.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Mon Sep 06 09:54:39 CEST 2021</td>
+            <td>06 Sep 2021, 09:54</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/testFeatures/test.feature</td>
+                    <td      class="passed"    >9</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">9</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="8714522200">8s 714ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/testFeatures/test.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Creating a patient</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 076ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create Patient Iteration &lt;test&gt;</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://google.com&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">2s 073ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>09:54:14.328 request:
+1 &gt; GET https://google.com
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: google.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:15.282 response time in milliseconds: 932.47
+1 &lt; 301
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+1 &lt; Cache-Control: private, max-age=2592000
+1 &lt; Content-Length: 220
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Mon, 06 Sep 2021 07:54:12 GMT
+1 &lt; Expires: Mon, 06 Sep 2021 07:54:12 GMT
+1 &lt; Location: https://www.google.com/
+1 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+1 &lt; Server: gws
+1 &lt; Set-Cookie: CONSENT=PENDING+973; expires=Fri, 01-Jan-2038 00:00:00 GMT; path=/; domain=.google.com; Secure
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+&lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;TITLE&gt;301 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;301 Moved&lt;/H1&gt;
+The document has moved
+&lt;A HREF=&quot;https://www.google.com/&quot;&gt;here&lt;/A&gt;.
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+09:54:15.287 request:
+2 &gt; GET https://google.com
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: CONSENT=PENDING+973
+2 &gt; Host: www.google.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:15.764 response time in milliseconds: 467.68
+2 &lt; 302
+2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+2 &lt; Cache-Control: private
+2 &lt; Content-Length: 308
+2 &lt; Content-Type: text/html; charset=UTF-8
+2 &lt; Date: Mon, 06 Sep 2021 07:54:12 GMT
+2 &lt; Location: https://consent.google.com/ml?continue=https://www.google.com/&amp;gl=GB&amp;m=0&amp;pc=shp&amp;hl=en&amp;src=1
+2 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+2 &lt; Server: gws
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 0
+&lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;302 Moved&lt;/H1&gt;
+The document has moved
+&lt;A HREF=&quot;https://consent.google.com/ml?continue=https://www.google.com/&amp;amp;gl=GB&amp;amp;m=0&amp;amp;pc=shp&amp;amp;hl=en&amp;amp;src=1&quot;&gt;here&lt;/A&gt;.
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+09:54:15.766 request:
+3 &gt; GET https://google.com
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Cookie: CONSENT=PENDING+973
+3 &gt; Host: consent.google.com
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:16.349 response time in milliseconds: 522.43
+3 &lt; 200
+3 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Security-Policy: [script-src 'report-sample' 'nonce-aBrO18N5VcnpEyZgkwQfLQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/ConsentHttp/cspreport;worker-src 'self', require-trusted-types-for 'script';report-uri /_/ConsentHttp/cspreport]
+3 &lt; Content-Type: text/html; charset=utf-8
+3 &lt; Cross-Origin-Opener-Policy: unsafe-none; report-to=&quot;ConsentHttp&quot;
+3 &lt; Cross-Origin-Resource-Policy: same-site
+3 &lt; Date: Mon, 06 Sep 2021 07:54:13 GMT
+3 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+3 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+3 &lt; Pragma: no-cache
+3 &lt; Report-To: {&quot;group&quot;:&quot;ConsentHttp&quot;,&quot;max_age&quot;:2592000,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://csp.withgoogle.com/csp/report-to/ConsentHttp/external&quot;}]}
+3 &lt; Server: ESF
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-XSS-Protection: 0
+&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;style nonce=&quot;RIIoQfLHLTksekWHlkDdaw&quot;&gt;
+a, a:link, a:visited, a:active, a:hover {
+  color: #1a73e8;
+  text-decoration: none;
+}
+body {
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  text-align: center;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.box {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 24px auto 5px auto;
+  max-width: 520px;
+  padding: 24px;
+}
+h1 {
+  color: #2c2c2c;
+  font-size: 24px;
+  hyphens: auto;
+  margin: 24px 0;
+}
+p, .sub, .contentText {
+  color: #5f6368;;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.signin {
+  text-align: right;
+}
+.image {
+  display: block;
+  margin: 14px auto;
+}
+a.button {
+  color: #fff;
+}
+button, .button {
+  border-radius: 4px;
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+  margin: 0 4px;
+  padding: 10px 24px;
+}
+input.button {
+  -webkit-appearance: none;
+}
+.error {
+  border: 2px solid #d93025;
+  border-radius: 5px;
+  color: #d93025;
+  margin: auto;
+  padding: 5px;
+}
+.footer {
+  margin-top: 16px;
+}
+.footer a {
+  margin-left: 24px;
+  white-space: nowrap;
+}
+.footer a, .footer select, .footer input {
+  color: #757575;
+  font-size: 12px;
+}
+.languagepicker {
+  display: inline-flex;
+  margin: 2px 0;
+}
+#languageform,
+#languageselect {
+  margin: 0 2px;
+}
+#languageselect {
+  color: #757575;
+}
+.detailspage {
+  margin: 24px auto 0 auto;
+  max-width: 700px;
+}
+.detailspage h1, .detailspage h2 {
+  font-size: 22px
+}
+.setting {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 11px;
+  padding: 24px 24px 20px 24px;
+  text-align: right;
+}
+.sub {
+  padding: 24px 24px 20px 24px;
+}
+hr {
+  margin: 12px -24px 12px;
+  border: 0;
+  border-top: 1px solid #dadce0;
+}
+fieldset {
+  border: none;
+  padding: 0;
+}
+label {
+  margin: 24px;
+}
+td {
+  vertical-align: top;
+}
+.setting h2, .setting h3, h4 {
+  color: #3c4043;
+  margin: 0;
+  text-align: left;
+}
+.yt-text {
+  color: #5f6368;
+  font-size: 14px;
+  font-weight: 300;
+}
+.productLogoContainer {
+  margin: auto;
+  max-width: 360px;
+}
+
+/** Narrow screen (for example a mobile device). */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 18px 14px;
+  }
+  .imgContainer {
+    min-width: 96px;
+  }
+  .hideOnSmallWidth {
+    display: none;
+  }
+  .footer form {
+    margin-bottom: 3px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .imgContainer {
+    min-width: 72px;
+  }
+}
+
+/** Normal/non-narrow screen. */
+@media not screen and (max-width: 480px) {
+  body {
+    margin: 18px 25px;
+  }
+  .imgContainer {
+    width: 51%;
+  }
+  .hideOnNormalWidth {
+    display: none;
+  }
+  .footer form {
+    display: inline;
+  }
+}
+&lt;/style&gt;&lt;title&gt;Before you continue to Google Search&lt;/title&gt;&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=5, width=device-width&quot;&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;//www.google.com/favicon.ico&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;signin&quot;&gt;&lt;a href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;amp;continue=https://www.google.com/&amp;amp;gae=cb-&quot; class=&quot;button&quot;&gt;Sign in&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;img src=&quot;//www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_68x28dp.png&quot; srcset=&quot;//www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_68x28dp.png 2x&quot; width=&quot;68&quot; height=&quot;28&quot; alt=&quot;Google&quot;&gt;&lt;div class=&quot;productLogoContainer&quot;&gt;&lt;img src=&quot;https://www.gstatic.com/ac/cb/scene_cookie_wall_search_v2.svg&quot; alt=&quot;&quot; width=&quot;100%&quot; height=&quot;100%&quot; class=&quot;image&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;&lt;h1&gt;Before you continue to Google Search&lt;/h1&gt;&lt;div class=&quot;contentText&quot;&gt;Google uses &lt;a href=&quot;https://policies.google.com/technologies/cookies?hl=en&amp;utm_source=ucb&quot; target=&quot;_blank&quot;&gt;cookies&lt;/a&gt; and data to:&lt;ul&gt;&lt;li&gt;Deliver and maintain services, like tracking outages and protecting against spam, fraud, and abuse&lt;/li&gt;&lt;li&gt;Measure audience engagement and site statistics to understand how our services are used&lt;/li&gt;&lt;/ul&gt;If you agree, we&rsquo;ll also use cookies and data to:&lt;ul&gt;&lt;li&gt;Improve the quality of our services and develop new ones&lt;/li&gt;&lt;li&gt;Deliver and measure the effectiveness of ads&lt;/li&gt;&lt;li&gt;Show personalized content, depending on your settings&lt;/li&gt;&lt;li&gt;Show personalized or generic ads, depending on your settings, on Google and across the web&lt;/li&gt;&lt;/ul&gt;For non-personalized content and ads, what you see may be influenced by things like the content you&rsquo;re currently viewing and your location (ad serving is based on general location). Personalized content and ads can be based on those things and your activity like Google searches and videos you watch on YouTube. Personalized content and ads include things like more relevant results and recommendations, a customized YouTube homepage, and ads that are tailored to your interests.&lt;p&gt;Click &ldquo;Customize&rdquo; to review options, including controls to reject the use of cookies for personalization and information about browser-level controls to reject some or all cookies for other uses. You can also visit g.co/privacytools anytime.&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://consent.google.com/dl?continue=https://www.google.com/&amp;amp;gl=GB&amp;amp;hl=en&amp;amp;pc=shp&amp;amp;src=1&quot; class=&quot;button&quot;&gt;Customize&lt;/a&gt;&lt;form action=&quot;https://consent.google.com/s&quot; method=&quot;POST&quot; style=&quot;display:inline;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;gl&quot; value=&quot;GB&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;m&quot; value=&quot;0&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;pc&quot; value=&quot;shp&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;continue&quot; value=&quot;https://www.google.com/&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;ca&quot; value=&quot;r&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;x&quot; value=&quot;8&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;v&quot; value=&quot;cb.20210831-11-p0.en+FX+973&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;t&quot; value=&quot;ADw3F8jqPOXZuGC-2rW75nYFiRXJ_SNNng:1630914853346&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;hl&quot; value=&quot;en&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;1&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;I agree&quot; class=&quot;button&quot; aria-label=&quot;Agree to the use of cookies and other data for the purposes described&quot;/&gt;&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;footer&quot;&gt;&lt;form action=&quot;https://consent.google.com/ml&quot; method=&quot;get&quot;&gt;&lt;select id=&quot;languageselect&quot; name=&quot;hl&quot;&gt;&lt;option value=&quot;af&quot;&gt;Afrikaans&lt;/option&gt;&lt;option value=&quot;az&quot;&gt;az&#601;rbaycan&lt;/option&gt;&lt;option value=&quot;bs&quot;&gt;bosanski&lt;/option&gt;&lt;option value=&quot;ca&quot;&gt;catal&agrave;&lt;/option&gt;&lt;option value=&quot;cs&quot;&gt;&#268;e&scaron;tina&lt;/option&gt;&lt;option value=&quot;cy&quot;&gt;Cymraeg&lt;/option&gt;&lt;option value=&quot;da&quot;&gt;Dansk&lt;/option&gt;&lt;option value=&quot;de&quot;&gt;Deutsch&lt;/option&gt;&lt;option value=&quot;et&quot;&gt;eesti&lt;/option&gt;&lt;option value=&quot;en-GB&quot;&gt;English&amp;nbsp;(United Kingdom)&lt;/option&gt;&lt;option value=&quot;en&quot; selected&gt;English&amp;nbsp;(United States)&lt;/option&gt;&lt;option value=&quot;es&quot;&gt;Espa&ntilde;ol&amp;nbsp;(Espa&ntilde;a)&lt;/option&gt;&lt;option value=&quot;es-419&quot;&gt;Espa&ntilde;ol&amp;nbsp;(Latinoam&eacute;rica)&lt;/option&gt;&lt;option value=&quot;eu&quot;&gt;euskara&lt;/option&gt;&lt;option value=&quot;fil&quot;&gt;Filipino&lt;/option&gt;&lt;option value=&quot;fr-CA&quot;&gt;Fran&ccedil;ais&amp;nbsp;(Canada)&lt;/option&gt;&lt;option value=&quot;fr&quot;&gt;Fran&ccedil;ais&amp;nbsp;(France)&lt;/option&gt;&lt;option value=&quot;ga&quot;&gt;Gaeilge&lt;/option&gt;&lt;option value=&quot;gl&quot;&gt;galego&lt;/option&gt;&lt;option value=&quot;hr&quot;&gt;Hrvatski&lt;/option&gt;&lt;option value=&quot;id&quot;&gt;Indonesia&lt;/option&gt;&lt;option value=&quot;zu&quot;&gt;isiZulu&lt;/option&gt;&lt;option value=&quot;is&quot;&gt;&iacute;slenska&lt;/option&gt;&lt;option value=&quot;it&quot;&gt;Italiano&lt;/option&gt;&lt;option value=&quot;sw&quot;&gt;Kiswahili&lt;/option&gt;&lt;option value=&quot;lv&quot;&gt;latvie&scaron;u&lt;/option&gt;&lt;option value=&quot;lt&quot;&gt;lietuvi&#371;&lt;/option&gt;&lt;option value=&quot;hu&quot;&gt;magyar&lt;/option&gt;&lt;option value=&quot;ms&quot;&gt;Melayu&lt;/option&gt;&lt;option value=&quot;nl&quot;&gt;Nederlands&lt;/option&gt;&lt;option value=&quot;no&quot;&gt;norsk&lt;/option&gt;&lt;option value=&quot;uz&quot;&gt;o&lsquo;zbek&lt;/option&gt;&lt;option value=&quot;pl&quot;&gt;polski&lt;/option&gt;&lt;option value=&quot;pt-BR&quot;&gt;Portugu&ecirc;s&amp;nbsp;(Brasil)&lt;/option&gt;&lt;option value=&quot;pt-PT&quot;&gt;Portugu&ecirc;s&amp;nbsp;(Portugal)&lt;/option&gt;&lt;option value=&quot;ro&quot;&gt;rom&acirc;n&#259;&lt;/option&gt;&lt;option value=&quot;sq&quot;&gt;shqip&lt;/option&gt;&lt;option value=&quot;sk&quot;&gt;Sloven&#269;ina&lt;/option&gt;&lt;option value=&quot;sl&quot;&gt;sloven&scaron;&#269;ina&lt;/option&gt;&lt;option value=&quot;sr-Latn&quot;&gt;srpski (latinica)&lt;/option&gt;&lt;option value=&quot;fi&quot;&gt;Suomi&lt;/option&gt;&lt;option value=&quot;sv&quot;&gt;Svenska&lt;/option&gt;&lt;option value=&quot;vi&quot;&gt;Ti&#7871;ng Vi&#7879;t&lt;/option&gt;&lt;option value=&quot;tr&quot;&gt;T&uuml;rk&ccedil;e&lt;/option&gt;&lt;option value=&quot;el&quot;&gt;&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#940;&lt;/option&gt;&lt;option value=&quot;be&quot;&gt;&#1073;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1072;&#1103;&lt;/option&gt;&lt;option value=&quot;bg&quot;&gt;&#1073;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;ky&quot;&gt;&#1082;&#1099;&#1088;&#1075;&#1099;&#1079;&#1095;&#1072;&lt;/option&gt;&lt;option value=&quot;kk&quot;&gt;&#1179;&#1072;&#1079;&#1072;&#1179; &#1090;&#1110;&#1083;&#1110;&lt;/option&gt;&lt;option value=&quot;mk&quot;&gt;&#1084;&#1072;&#1082;&#1077;&#1076;&#1086;&#1085;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;mn&quot;&gt;&#1084;&#1086;&#1085;&#1075;&#1086;&#1083;&lt;/option&gt;&lt;option value=&quot;ru&quot;&gt;&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;&lt;/option&gt;&lt;option value=&quot;sr&quot;&gt;&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;uk&quot;&gt;&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;&lt;/option&gt;&lt;option value=&quot;ka&quot;&gt;&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312;&lt;/option&gt;&lt;option value=&quot;hy&quot;&gt;&#1392;&#1377;&#1397;&#1381;&#1408;&#1381;&#1398;&lt;/option&gt;&lt;option value=&quot;iw&quot;&gt;&#1506;&#1489;&#1512;&#1497;&#1514;&lt;/option&gt;&lt;option value=&quot;ur&quot;&gt;&#1575;&#1585;&#1583;&#1608;&lt;/option&gt;&lt;option value=&quot;ar&quot;&gt;&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;&lt;/option&gt;&lt;option value=&quot;fa&quot;&gt;&#1601;&#1575;&#1585;&#1587;&#1740;&lt;/option&gt;&lt;option value=&quot;am&quot;&gt;&#4768;&#4635;&#4653;&#4763;&lt;/option&gt;&lt;option value=&quot;ne&quot;&gt;&#2344;&#2375;&#2346;&#2366;&#2354;&#2368;&lt;/option&gt;&lt;option value=&quot;mr&quot;&gt;&#2350;&#2352;&#2366;&#2336;&#2368;&lt;/option&gt;&lt;option value=&quot;hi&quot;&gt;&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;&lt;/option&gt;&lt;option value=&quot;as&quot;&gt;&#2437;&#2488;&#2478;&#2496;&#2479;&#2492;&#2494;&lt;/option&gt;&lt;option value=&quot;bn&quot;&gt;&#2476;&#2494;&#2434;&#2482;&#2494;&lt;/option&gt;&lt;option value=&quot;pa&quot;&gt;&#2602;&#2672;&#2588;&#2622;&#2604;&#2624;&lt;/option&gt;&lt;option value=&quot;gu&quot;&gt;&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;&lt;/option&gt;&lt;option value=&quot;or&quot;&gt;&#2835;&#2849;&#2876;&#2879;&#2822;&lt;/option&gt;&lt;option value=&quot;ta&quot;&gt;&#2980;&#2990;&#3007;&#2996;&#3021;&lt;/option&gt;&lt;option value=&quot;te&quot;&gt;&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;&lt;/option&gt;&lt;option value=&quot;kn&quot;&gt;&#3221;&#3240;&#3277;&#3240;&#3233;&lt;/option&gt;&lt;option value=&quot;ml&quot;&gt;&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;&lt;/option&gt;&lt;option value=&quot;si&quot;&gt;&#3523;&#3538;&#3458;&#3524;&#3517;&lt;/option&gt;&lt;option value=&quot;th&quot;&gt;&#3652;&#3607;&#3618;&lt;/option&gt;&lt;option value=&quot;lo&quot;&gt;&#3749;&#3762;&#3751;&lt;/option&gt;&lt;option value=&quot;my&quot;&gt;&#4121;&#4156;&#4116;&#4154;&#4121;&#4140;&lt;/option&gt;&lt;option value=&quot;km&quot;&gt;&#6017;&#6098;&#6040;&#6082;&#6042;&lt;/option&gt;&lt;option value=&quot;ko&quot;&gt;&#54620;&#44397;&#50612;&lt;/option&gt;&lt;option value=&quot;ja&quot;&gt;&#26085;&#26412;&#35486;&lt;/option&gt;&lt;option value=&quot;zh-CN&quot;&gt;&#31616;&#20307;&#20013;&#25991;&lt;/option&gt;&lt;option value=&quot;zh-TW&quot;&gt;&#32321;&#39636;&#20013;&#25991;&lt;/option&gt;&lt;option value=&quot;zh-HK&quot;&gt;&#32321;&#39636;&#20013;&#25991;&amp;nbsp;(&#39321;&#28207;)&lt;/option&gt;&lt;/select&gt;&lt;input type=&quot;hidden&quot; name=&quot;oldhl&quot; value=&quot;en&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;gl&quot; value=&quot;GB&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;m&quot; value=&quot;0&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;pc&quot; value=&quot;shp&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;continue&quot; value=&quot;https://www.google.com/&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;1&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Change language&quot;&gt;&lt;/form&gt;&lt;a href=&quot;https://policies.google.com/privacy?hl=en&amp;utm_source=ucb&quot;&gt;Privacy Policy&lt;/a&gt; &lt;a href=&quot;https://policies.google.com/terms?hl=en&amp;utm_source=ucb&quot;&gt;Terms of Service&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+09:54:16.352 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 174; columnNumber: 209; The element type &quot;link&quot; must be terminated by the matching end-tag &quot;&lt;/link&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 622ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create Patient Iteration &lt;test&gt;</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://google.com&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">2s 620ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>09:54:16.357 request:
+1 &gt; GET https://google.com
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: google.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:17.206 response time in milliseconds: 842.60
+1 &lt; 301
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+1 &lt; Cache-Control: private, max-age=2592000
+1 &lt; Content-Length: 220
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Mon, 06 Sep 2021 07:54:14 GMT
+1 &lt; Expires: Mon, 06 Sep 2021 07:54:14 GMT
+1 &lt; Location: https://www.google.com/
+1 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+1 &lt; Server: gws
+1 &lt; Set-Cookie: CONSENT=PENDING+709; expires=Fri, 01-Jan-2038 00:00:00 GMT; path=/; domain=.google.com; Secure
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+&lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;TITLE&gt;301 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;301 Moved&lt;/H1&gt;
+The document has moved
+&lt;A HREF=&quot;https://www.google.com/&quot;&gt;here&lt;/A&gt;.
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+09:54:17.208 request:
+2 &gt; GET https://google.com
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: CONSENT=PENDING+709
+2 &gt; Host: www.google.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:18.027 response time in milliseconds: 810.59
+2 &lt; 302
+2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+2 &lt; Cache-Control: private
+2 &lt; Content-Length: 308
+2 &lt; Content-Type: text/html; charset=UTF-8
+2 &lt; Date: Mon, 06 Sep 2021 07:54:14 GMT
+2 &lt; Location: https://consent.google.com/ml?continue=https://www.google.com/&amp;gl=GB&amp;m=0&amp;pc=shp&amp;hl=en&amp;src=1
+2 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+2 &lt; Server: gws
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 0
+&lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;302 Moved&lt;/H1&gt;
+The document has moved
+&lt;A HREF=&quot;https://consent.google.com/ml?continue=https://www.google.com/&amp;amp;gl=GB&amp;amp;m=0&amp;amp;pc=shp&amp;amp;hl=en&amp;amp;src=1&quot;&gt;here&lt;/A&gt;.
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+09:54:18.029 request:
+3 &gt; GET https://google.com
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Cookie: CONSENT=PENDING+709
+3 &gt; Host: consent.google.com
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:18.970 response time in milliseconds: 881.15
+3 &lt; 200
+3 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Security-Policy: [script-src 'report-sample' 'nonce-zOQuGhPj8hs5cc25KWSDKw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/ConsentHttp/cspreport;worker-src 'self', require-trusted-types-for 'script';report-uri /_/ConsentHttp/cspreport]
+3 &lt; Content-Type: text/html; charset=utf-8
+3 &lt; Cross-Origin-Opener-Policy: unsafe-none; report-to=&quot;ConsentHttp&quot;
+3 &lt; Cross-Origin-Resource-Policy: same-site
+3 &lt; Date: Mon, 06 Sep 2021 07:54:15 GMT
+3 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+3 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+3 &lt; Pragma: no-cache
+3 &lt; Report-To: {&quot;group&quot;:&quot;ConsentHttp&quot;,&quot;max_age&quot;:2592000,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://csp.withgoogle.com/csp/report-to/ConsentHttp/external&quot;}]}
+3 &lt; Server: ESF
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-XSS-Protection: 0
+&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;style nonce=&quot;loKuKPjQMboqP0nt+SWAUA&quot;&gt;
+a, a:link, a:visited, a:active, a:hover {
+  color: #1a73e8;
+  text-decoration: none;
+}
+body {
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  text-align: center;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.box {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 24px auto 5px auto;
+  max-width: 520px;
+  padding: 24px;
+}
+h1 {
+  color: #2c2c2c;
+  font-size: 24px;
+  hyphens: auto;
+  margin: 24px 0;
+}
+p, .sub, .contentText {
+  color: #5f6368;;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.signin {
+  text-align: right;
+}
+.image {
+  display: block;
+  margin: 14px auto;
+}
+a.button {
+  color: #fff;
+}
+button, .button {
+  border-radius: 4px;
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+  margin: 0 4px;
+  padding: 10px 24px;
+}
+input.button {
+  -webkit-appearance: none;
+}
+.error {
+  border: 2px solid #d93025;
+  border-radius: 5px;
+  color: #d93025;
+  margin: auto;
+  padding: 5px;
+}
+.footer {
+  margin-top: 16px;
+}
+.footer a {
+  margin-left: 24px;
+  white-space: nowrap;
+}
+.footer a, .footer select, .footer input {
+  color: #757575;
+  font-size: 12px;
+}
+.languagepicker {
+  display: inline-flex;
+  margin: 2px 0;
+}
+#languageform,
+#languageselect {
+  margin: 0 2px;
+}
+#languageselect {
+  color: #757575;
+}
+.detailspage {
+  margin: 24px auto 0 auto;
+  max-width: 700px;
+}
+.detailspage h1, .detailspage h2 {
+  font-size: 22px
+}
+.setting {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 11px;
+  padding: 24px 24px 20px 24px;
+  text-align: right;
+}
+.sub {
+  padding: 24px 24px 20px 24px;
+}
+hr {
+  margin: 12px -24px 12px;
+  border: 0;
+  border-top: 1px solid #dadce0;
+}
+fieldset {
+  border: none;
+  padding: 0;
+}
+label {
+  margin: 24px;
+}
+td {
+  vertical-align: top;
+}
+.setting h2, .setting h3, h4 {
+  color: #3c4043;
+  margin: 0;
+  text-align: left;
+}
+.yt-text {
+  color: #5f6368;
+  font-size: 14px;
+  font-weight: 300;
+}
+.productLogoContainer {
+  margin: auto;
+  max-width: 360px;
+}
+
+/** Narrow screen (for example a mobile device). */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 18px 14px;
+  }
+  .imgContainer {
+    min-width: 96px;
+  }
+  .hideOnSmallWidth {
+    display: none;
+  }
+  .footer form {
+    margin-bottom: 3px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .imgContainer {
+    min-width: 72px;
+  }
+}
+
+/** Normal/non-narrow screen. */
+@media not screen and (max-width: 480px) {
+  body {
+    margin: 18px 25px;
+  }
+  .imgContainer {
+    width: 51%;
+  }
+  .hideOnNormalWidth {
+    display: none;
+  }
+  .footer form {
+    display: inline;
+  }
+}
+&lt;/style&gt;&lt;title&gt;Before you continue to Google Search&lt;/title&gt;&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=5, width=device-width&quot;&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;//www.google.com/favicon.ico&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;signin&quot;&gt;&lt;a href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;amp;continue=https://www.google.com/&amp;amp;gae=cb-&quot; class=&quot;button&quot;&gt;Sign in&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;img src=&quot;//www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_68x28dp.png&quot; srcset=&quot;//www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_68x28dp.png 2x&quot; width=&quot;68&quot; height=&quot;28&quot; alt=&quot;Google&quot;&gt;&lt;div class=&quot;productLogoContainer&quot;&gt;&lt;img src=&quot;https://www.gstatic.com/ac/cb/scene_cookie_wall_search_v2.svg&quot; alt=&quot;&quot; width=&quot;100%&quot; height=&quot;100%&quot; class=&quot;image&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;&lt;h1&gt;Before you continue to Google Search&lt;/h1&gt;&lt;div class=&quot;contentText&quot;&gt;Google uses &lt;a href=&quot;https://policies.google.com/technologies/cookies?hl=en&amp;utm_source=ucb&quot; target=&quot;_blank&quot;&gt;cookies&lt;/a&gt; and data to:&lt;ul&gt;&lt;li&gt;Deliver and maintain services, like tracking outages and protecting against spam, fraud, and abuse&lt;/li&gt;&lt;li&gt;Measure audience engagement and site statistics to understand how our services are used&lt;/li&gt;&lt;/ul&gt;If you agree, we&rsquo;ll also use cookies and data to:&lt;ul&gt;&lt;li&gt;Improve the quality of our services and develop new ones&lt;/li&gt;&lt;li&gt;Deliver and measure the effectiveness of ads&lt;/li&gt;&lt;li&gt;Show personalized content, depending on your settings&lt;/li&gt;&lt;li&gt;Show personalized or generic ads, depending on your settings, on Google and across the web&lt;/li&gt;&lt;/ul&gt;For non-personalized content and ads, what you see may be influenced by things like the content you&rsquo;re currently viewing and your location (ad serving is based on general location). Personalized content and ads can be based on those things and your activity like Google searches and videos you watch on YouTube. Personalized content and ads include things like more relevant results and recommendations, a customized YouTube homepage, and ads that are tailored to your interests.&lt;p&gt;Click &ldquo;Customize&rdquo; to review options, including controls to reject the use of cookies for personalization and information about browser-level controls to reject some or all cookies for other uses. You can also visit g.co/privacytools anytime.&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://consent.google.com/dl?continue=https://www.google.com/&amp;amp;gl=GB&amp;amp;hl=en&amp;amp;pc=shp&amp;amp;src=1&quot; class=&quot;button&quot;&gt;Customize&lt;/a&gt;&lt;form action=&quot;https://consent.google.com/s&quot; method=&quot;POST&quot; style=&quot;display:inline;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;gl&quot; value=&quot;GB&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;m&quot; value=&quot;0&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;pc&quot; value=&quot;shp&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;continue&quot; value=&quot;https://www.google.com/&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;ca&quot; value=&quot;r&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;x&quot; value=&quot;8&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;v&quot; value=&quot;cb.20210831-11-p0.en+FX+709&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;t&quot; value=&quot;ADw3F8hovPltwmCw6BYR54yVwWPdEI6UYA:1630914855727&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;hl&quot; value=&quot;en&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;1&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;I agree&quot; class=&quot;button&quot; aria-label=&quot;Agree to the use of cookies and other data for the purposes described&quot;/&gt;&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;footer&quot;&gt;&lt;form action=&quot;https://consent.google.com/ml&quot; method=&quot;get&quot;&gt;&lt;select id=&quot;languageselect&quot; name=&quot;hl&quot;&gt;&lt;option value=&quot;af&quot;&gt;Afrikaans&lt;/option&gt;&lt;option value=&quot;az&quot;&gt;az&#601;rbaycan&lt;/option&gt;&lt;option value=&quot;bs&quot;&gt;bosanski&lt;/option&gt;&lt;option value=&quot;ca&quot;&gt;catal&agrave;&lt;/option&gt;&lt;option value=&quot;cs&quot;&gt;&#268;e&scaron;tina&lt;/option&gt;&lt;option value=&quot;cy&quot;&gt;Cymraeg&lt;/option&gt;&lt;option value=&quot;da&quot;&gt;Dansk&lt;/option&gt;&lt;option value=&quot;de&quot;&gt;Deutsch&lt;/option&gt;&lt;option value=&quot;et&quot;&gt;eesti&lt;/option&gt;&lt;option value=&quot;en-GB&quot;&gt;English&amp;nbsp;(United Kingdom)&lt;/option&gt;&lt;option value=&quot;en&quot; selected&gt;English&amp;nbsp;(United States)&lt;/option&gt;&lt;option value=&quot;es&quot;&gt;Espa&ntilde;ol&amp;nbsp;(Espa&ntilde;a)&lt;/option&gt;&lt;option value=&quot;es-419&quot;&gt;Espa&ntilde;ol&amp;nbsp;(Latinoam&eacute;rica)&lt;/option&gt;&lt;option value=&quot;eu&quot;&gt;euskara&lt;/option&gt;&lt;option value=&quot;fil&quot;&gt;Filipino&lt;/option&gt;&lt;option value=&quot;fr-CA&quot;&gt;Fran&ccedil;ais&amp;nbsp;(Canada)&lt;/option&gt;&lt;option value=&quot;fr&quot;&gt;Fran&ccedil;ais&amp;nbsp;(France)&lt;/option&gt;&lt;option value=&quot;ga&quot;&gt;Gaeilge&lt;/option&gt;&lt;option value=&quot;gl&quot;&gt;galego&lt;/option&gt;&lt;option value=&quot;hr&quot;&gt;Hrvatski&lt;/option&gt;&lt;option value=&quot;id&quot;&gt;Indonesia&lt;/option&gt;&lt;option value=&quot;zu&quot;&gt;isiZulu&lt;/option&gt;&lt;option value=&quot;is&quot;&gt;&iacute;slenska&lt;/option&gt;&lt;option value=&quot;it&quot;&gt;Italiano&lt;/option&gt;&lt;option value=&quot;sw&quot;&gt;Kiswahili&lt;/option&gt;&lt;option value=&quot;lv&quot;&gt;latvie&scaron;u&lt;/option&gt;&lt;option value=&quot;lt&quot;&gt;lietuvi&#371;&lt;/option&gt;&lt;option value=&quot;hu&quot;&gt;magyar&lt;/option&gt;&lt;option value=&quot;ms&quot;&gt;Melayu&lt;/option&gt;&lt;option value=&quot;nl&quot;&gt;Nederlands&lt;/option&gt;&lt;option value=&quot;no&quot;&gt;norsk&lt;/option&gt;&lt;option value=&quot;uz&quot;&gt;o&lsquo;zbek&lt;/option&gt;&lt;option value=&quot;pl&quot;&gt;polski&lt;/option&gt;&lt;option value=&quot;pt-BR&quot;&gt;Portugu&ecirc;s&amp;nbsp;(Brasil)&lt;/option&gt;&lt;option value=&quot;pt-PT&quot;&gt;Portugu&ecirc;s&amp;nbsp;(Portugal)&lt;/option&gt;&lt;option value=&quot;ro&quot;&gt;rom&acirc;n&#259;&lt;/option&gt;&lt;option value=&quot;sq&quot;&gt;shqip&lt;/option&gt;&lt;option value=&quot;sk&quot;&gt;Sloven&#269;ina&lt;/option&gt;&lt;option value=&quot;sl&quot;&gt;sloven&scaron;&#269;ina&lt;/option&gt;&lt;option value=&quot;sr-Latn&quot;&gt;srpski (latinica)&lt;/option&gt;&lt;option value=&quot;fi&quot;&gt;Suomi&lt;/option&gt;&lt;option value=&quot;sv&quot;&gt;Svenska&lt;/option&gt;&lt;option value=&quot;vi&quot;&gt;Ti&#7871;ng Vi&#7879;t&lt;/option&gt;&lt;option value=&quot;tr&quot;&gt;T&uuml;rk&ccedil;e&lt;/option&gt;&lt;option value=&quot;el&quot;&gt;&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#940;&lt;/option&gt;&lt;option value=&quot;be&quot;&gt;&#1073;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1072;&#1103;&lt;/option&gt;&lt;option value=&quot;bg&quot;&gt;&#1073;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;ky&quot;&gt;&#1082;&#1099;&#1088;&#1075;&#1099;&#1079;&#1095;&#1072;&lt;/option&gt;&lt;option value=&quot;kk&quot;&gt;&#1179;&#1072;&#1079;&#1072;&#1179; &#1090;&#1110;&#1083;&#1110;&lt;/option&gt;&lt;option value=&quot;mk&quot;&gt;&#1084;&#1072;&#1082;&#1077;&#1076;&#1086;&#1085;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;mn&quot;&gt;&#1084;&#1086;&#1085;&#1075;&#1086;&#1083;&lt;/option&gt;&lt;option value=&quot;ru&quot;&gt;&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;&lt;/option&gt;&lt;option value=&quot;sr&quot;&gt;&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;uk&quot;&gt;&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;&lt;/option&gt;&lt;option value=&quot;ka&quot;&gt;&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312;&lt;/option&gt;&lt;option value=&quot;hy&quot;&gt;&#1392;&#1377;&#1397;&#1381;&#1408;&#1381;&#1398;&lt;/option&gt;&lt;option value=&quot;iw&quot;&gt;&#1506;&#1489;&#1512;&#1497;&#1514;&lt;/option&gt;&lt;option value=&quot;ur&quot;&gt;&#1575;&#1585;&#1583;&#1608;&lt;/option&gt;&lt;option value=&quot;ar&quot;&gt;&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;&lt;/option&gt;&lt;option value=&quot;fa&quot;&gt;&#1601;&#1575;&#1585;&#1587;&#1740;&lt;/option&gt;&lt;option value=&quot;am&quot;&gt;&#4768;&#4635;&#4653;&#4763;&lt;/option&gt;&lt;option value=&quot;ne&quot;&gt;&#2344;&#2375;&#2346;&#2366;&#2354;&#2368;&lt;/option&gt;&lt;option value=&quot;mr&quot;&gt;&#2350;&#2352;&#2366;&#2336;&#2368;&lt;/option&gt;&lt;option value=&quot;hi&quot;&gt;&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;&lt;/option&gt;&lt;option value=&quot;as&quot;&gt;&#2437;&#2488;&#2478;&#2496;&#2479;&#2492;&#2494;&lt;/option&gt;&lt;option value=&quot;bn&quot;&gt;&#2476;&#2494;&#2434;&#2482;&#2494;&lt;/option&gt;&lt;option value=&quot;pa&quot;&gt;&#2602;&#2672;&#2588;&#2622;&#2604;&#2624;&lt;/option&gt;&lt;option value=&quot;gu&quot;&gt;&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;&lt;/option&gt;&lt;option value=&quot;or&quot;&gt;&#2835;&#2849;&#2876;&#2879;&#2822;&lt;/option&gt;&lt;option value=&quot;ta&quot;&gt;&#2980;&#2990;&#3007;&#2996;&#3021;&lt;/option&gt;&lt;option value=&quot;te&quot;&gt;&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;&lt;/option&gt;&lt;option value=&quot;kn&quot;&gt;&#3221;&#3240;&#3277;&#3240;&#3233;&lt;/option&gt;&lt;option value=&quot;ml&quot;&gt;&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;&lt;/option&gt;&lt;option value=&quot;si&quot;&gt;&#3523;&#3538;&#3458;&#3524;&#3517;&lt;/option&gt;&lt;option value=&quot;th&quot;&gt;&#3652;&#3607;&#3618;&lt;/option&gt;&lt;option value=&quot;lo&quot;&gt;&#3749;&#3762;&#3751;&lt;/option&gt;&lt;option value=&quot;my&quot;&gt;&#4121;&#4156;&#4116;&#4154;&#4121;&#4140;&lt;/option&gt;&lt;option value=&quot;km&quot;&gt;&#6017;&#6098;&#6040;&#6082;&#6042;&lt;/option&gt;&lt;option value=&quot;ko&quot;&gt;&#54620;&#44397;&#50612;&lt;/option&gt;&lt;option value=&quot;ja&quot;&gt;&#26085;&#26412;&#35486;&lt;/option&gt;&lt;option value=&quot;zh-CN&quot;&gt;&#31616;&#20307;&#20013;&#25991;&lt;/option&gt;&lt;option value=&quot;zh-TW&quot;&gt;&#32321;&#39636;&#20013;&#25991;&lt;/option&gt;&lt;option value=&quot;zh-HK&quot;&gt;&#32321;&#39636;&#20013;&#25991;&amp;nbsp;(&#39321;&#28207;)&lt;/option&gt;&lt;/select&gt;&lt;input type=&quot;hidden&quot; name=&quot;oldhl&quot; value=&quot;en&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;gl&quot; value=&quot;GB&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;m&quot; value=&quot;0&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;pc&quot; value=&quot;shp&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;continue&quot; value=&quot;https://www.google.com/&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;1&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Change language&quot;&gt;&lt;/form&gt;&lt;a href=&quot;https://policies.google.com/privacy?hl=en&amp;utm_source=ucb&quot;&gt;Privacy Policy&lt;/a&gt; &lt;a href=&quot;https://policies.google.com/terms?hl=en&amp;utm_source=ucb&quot;&gt;Terms of Service&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+09:54:18.975 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 174; columnNumber: 209; The element type &quot;link&quot; must be terminated by the matching end-tag &quot;&lt;/link&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">4s 015ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create Patient Iteration &lt;test&gt;</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://google.com&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">4s 012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>09:54:18.980 request:
+1 &gt; GET https://google.com
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: google.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:20.358 response time in milliseconds: 1368.97
+1 &lt; 301
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+1 &lt; Cache-Control: private, max-age=2592000
+1 &lt; Content-Length: 220
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Mon, 06 Sep 2021 07:54:17 GMT
+1 &lt; Expires: Mon, 06 Sep 2021 07:54:17 GMT
+1 &lt; Location: https://www.google.com/
+1 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+1 &lt; Server: gws
+1 &lt; Set-Cookie: CONSENT=PENDING+635; expires=Fri, 01-Jan-2038 00:00:00 GMT; path=/; domain=.google.com; Secure
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+&lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;TITLE&gt;301 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;301 Moved&lt;/H1&gt;
+The document has moved
+&lt;A HREF=&quot;https://www.google.com/&quot;&gt;here&lt;/A&gt;.
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+09:54:20.359 request:
+2 &gt; GET https://google.com
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: CONSENT=PENDING+635
+2 &gt; Host: www.google.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:21.378 response time in milliseconds: 1011.04
+2 &lt; 302
+2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+2 &lt; Cache-Control: private
+2 &lt; Content-Length: 308
+2 &lt; Content-Type: text/html; charset=UTF-8
+2 &lt; Date: Mon, 06 Sep 2021 07:54:18 GMT
+2 &lt; Location: https://consent.google.com/ml?continue=https://www.google.com/&amp;gl=GB&amp;m=0&amp;pc=shp&amp;hl=en&amp;src=1
+2 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+2 &lt; Server: gws
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 0
+&lt;HTML&gt;&lt;HEAD&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;TITLE&gt;302 Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;302 Moved&lt;/H1&gt;
+The document has moved
+&lt;A HREF=&quot;https://consent.google.com/ml?continue=https://www.google.com/&amp;amp;gl=GB&amp;amp;m=0&amp;amp;pc=shp&amp;amp;hl=en&amp;amp;src=1&quot;&gt;here&lt;/A&gt;.
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+09:54:21.380 request:
+3 &gt; GET https://google.com
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Cookie: CONSENT=PENDING+635
+3 &gt; Host: consent.google.com
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+09:54:22.988 response time in milliseconds: 1550.55
+3 &lt; 200
+3 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000,h3-T051=&quot;:443&quot;; ma=2592000,h3-Q050=&quot;:443&quot;; ma=2592000,h3-Q046=&quot;:443&quot;; ma=2592000,h3-Q043=&quot;:443&quot;; ma=2592000,quic=&quot;:443&quot;; ma=2592000; v=&quot;46,43&quot;
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Security-Policy: [script-src 'report-sample' 'nonce-6/OIAB7AvyXAfACJiqLirQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/ConsentHttp/cspreport;worker-src 'self', require-trusted-types-for 'script';report-uri /_/ConsentHttp/cspreport]
+3 &lt; Content-Type: text/html; charset=utf-8
+3 &lt; Cross-Origin-Opener-Policy: unsafe-none
+3 &lt; Cross-Origin-Resource-Policy: same-site
+3 &lt; Date: Mon, 06 Sep 2021 07:54:19 GMT
+3 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+3 &lt; P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;
+3 &lt; Pragma: no-cache
+3 &lt; Server: ESF
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-XSS-Protection: 0
+&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;head&gt;&lt;style nonce=&quot;kUJptgt0D8G/rffNBsQO3Q&quot;&gt;
+a, a:link, a:visited, a:active, a:hover {
+  color: #1a73e8;
+  text-decoration: none;
+}
+body {
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  text-align: center;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.box {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 24px auto 5px auto;
+  max-width: 520px;
+  padding: 24px;
+}
+h1 {
+  color: #2c2c2c;
+  font-size: 24px;
+  hyphens: auto;
+  margin: 24px 0;
+}
+p, .sub, .contentText {
+  color: #5f6368;;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.signin {
+  text-align: right;
+}
+.image {
+  display: block;
+  margin: 14px auto;
+}
+a.button {
+  color: #fff;
+}
+button, .button {
+  border-radius: 4px;
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+  margin: 0 4px;
+  padding: 10px 24px;
+}
+input.button {
+  -webkit-appearance: none;
+}
+.error {
+  border: 2px solid #d93025;
+  border-radius: 5px;
+  color: #d93025;
+  margin: auto;
+  padding: 5px;
+}
+.footer {
+  margin-top: 16px;
+}
+.footer a {
+  margin-left: 24px;
+  white-space: nowrap;
+}
+.footer a, .footer select, .footer input {
+  color: #757575;
+  font-size: 12px;
+}
+.languagepicker {
+  display: inline-flex;
+  margin: 2px 0;
+}
+#languageform,
+#languageselect {
+  margin: 0 2px;
+}
+#languageselect {
+  color: #757575;
+}
+.detailspage {
+  margin: 24px auto 0 auto;
+  max-width: 700px;
+}
+.detailspage h1, .detailspage h2 {
+  font-size: 22px
+}
+.setting {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 11px;
+  padding: 24px 24px 20px 24px;
+  text-align: right;
+}
+.sub {
+  padding: 24px 24px 20px 24px;
+}
+hr {
+  margin: 12px -24px 12px;
+  border: 0;
+  border-top: 1px solid #dadce0;
+}
+fieldset {
+  border: none;
+  padding: 0;
+}
+label {
+  margin: 24px;
+}
+td {
+  vertical-align: top;
+}
+.setting h2, .setting h3, h4 {
+  color: #3c4043;
+  margin: 0;
+  text-align: left;
+}
+.yt-text {
+  color: #5f6368;
+  font-size: 14px;
+  font-weight: 300;
+}
+.productLogoContainer {
+  margin: auto;
+  max-width: 360px;
+}
+
+/** Narrow screen (for example a mobile device). */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 18px 14px;
+  }
+  .imgContainer {
+    min-width: 96px;
+  }
+  .hideOnSmallWidth {
+    display: none;
+  }
+  .footer form {
+    margin-bottom: 3px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .imgContainer {
+    min-width: 72px;
+  }
+}
+
+/** Normal/non-narrow screen. */
+@media not screen and (max-width: 480px) {
+  body {
+    margin: 18px 25px;
+  }
+  .imgContainer {
+    width: 51%;
+  }
+  .hideOnNormalWidth {
+    display: none;
+  }
+  .footer form {
+    display: inline;
+  }
+}
+&lt;/style&gt;&lt;title&gt;Before you continue to Google Search&lt;/title&gt;&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=5, width=device-width&quot;&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;//www.google.com/favicon.ico&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;signin&quot;&gt;&lt;a href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;amp;continue=https://www.google.com/&amp;amp;gae=cb-&quot; class=&quot;button&quot;&gt;Sign in&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;img src=&quot;//www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_68x28dp.png&quot; srcset=&quot;//www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_68x28dp.png 2x&quot; width=&quot;68&quot; height=&quot;28&quot; alt=&quot;Google&quot;&gt;&lt;div class=&quot;productLogoContainer&quot;&gt;&lt;img src=&quot;https://www.gstatic.com/ac/cb/scene_cookie_wall_search_v2.svg&quot; alt=&quot;&quot; width=&quot;100%&quot; height=&quot;100%&quot; class=&quot;image&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;&lt;h1&gt;Before you continue to Google Search&lt;/h1&gt;&lt;div class=&quot;contentText&quot;&gt;Google uses &lt;a href=&quot;https://policies.google.com/technologies/cookies?hl=en&amp;utm_source=ucb&quot; target=&quot;_blank&quot;&gt;cookies&lt;/a&gt; and data to:&lt;ul&gt;&lt;li&gt;Deliver and maintain services, like tracking outages and protecting against spam, fraud, and abuse&lt;/li&gt;&lt;li&gt;Measure audience engagement and site statistics to understand how our services are used&lt;/li&gt;&lt;/ul&gt;If you agree, we&rsquo;ll also use cookies and data to:&lt;ul&gt;&lt;li&gt;Improve the quality of our services and develop new ones&lt;/li&gt;&lt;li&gt;Deliver and measure the effectiveness of ads&lt;/li&gt;&lt;li&gt;Show personalized content, depending on your settings&lt;/li&gt;&lt;li&gt;Show personalized or generic ads, depending on your settings, on Google and across the web&lt;/li&gt;&lt;/ul&gt;For non-personalized content and ads, what you see may be influenced by things like the content you&rsquo;re currently viewing and your location (ad serving is based on general location). Personalized content and ads can be based on those things and your activity like Google searches and videos you watch on YouTube. Personalized content and ads include things like more relevant results and recommendations, a customized YouTube homepage, and ads that are tailored to your interests.&lt;p&gt;Click &ldquo;Customize&rdquo; to review options, including controls to reject the use of cookies for personalization and information about browser-level controls to reject some or all cookies for other uses. You can also visit g.co/privacytools anytime.&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://consent.google.com/dl?continue=https://www.google.com/&amp;amp;gl=GB&amp;amp;hl=en&amp;amp;pc=shp&amp;amp;src=1&quot; class=&quot;button&quot;&gt;Customize&lt;/a&gt;&lt;form action=&quot;https://consent.google.com/s&quot; method=&quot;POST&quot; style=&quot;display:inline;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;gl&quot; value=&quot;GB&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;m&quot; value=&quot;0&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;pc&quot; value=&quot;shp&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;continue&quot; value=&quot;https://www.google.com/&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;ca&quot; value=&quot;r&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;x&quot; value=&quot;8&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;v&quot; value=&quot;cb.20210831-11-p0.en+FX+635&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;t&quot; value=&quot;ADw3F8jhuwav5Et3kfgUDLB28Dpr0POu5A:1630914859580&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;hl&quot; value=&quot;en&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;1&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;I agree&quot; class=&quot;button&quot; aria-label=&quot;Agree to the use of cookies and other data for the purposes described&quot;/&gt;&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;footer&quot;&gt;&lt;form action=&quot;https://consent.google.com/ml&quot; method=&quot;get&quot;&gt;&lt;select id=&quot;languageselect&quot; name=&quot;hl&quot;&gt;&lt;option value=&quot;af&quot;&gt;Afrikaans&lt;/option&gt;&lt;option value=&quot;az&quot;&gt;az&#601;rbaycan&lt;/option&gt;&lt;option value=&quot;bs&quot;&gt;bosanski&lt;/option&gt;&lt;option value=&quot;ca&quot;&gt;catal&agrave;&lt;/option&gt;&lt;option value=&quot;cs&quot;&gt;&#268;e&scaron;tina&lt;/option&gt;&lt;option value=&quot;cy&quot;&gt;Cymraeg&lt;/option&gt;&lt;option value=&quot;da&quot;&gt;Dansk&lt;/option&gt;&lt;option value=&quot;de&quot;&gt;Deutsch&lt;/option&gt;&lt;option value=&quot;et&quot;&gt;eesti&lt;/option&gt;&lt;option value=&quot;en-GB&quot;&gt;English&amp;nbsp;(United Kingdom)&lt;/option&gt;&lt;option value=&quot;en&quot; selected&gt;English&amp;nbsp;(United States)&lt;/option&gt;&lt;option value=&quot;es&quot;&gt;Espa&ntilde;ol&amp;nbsp;(Espa&ntilde;a)&lt;/option&gt;&lt;option value=&quot;es-419&quot;&gt;Espa&ntilde;ol&amp;nbsp;(Latinoam&eacute;rica)&lt;/option&gt;&lt;option value=&quot;eu&quot;&gt;euskara&lt;/option&gt;&lt;option value=&quot;fil&quot;&gt;Filipino&lt;/option&gt;&lt;option value=&quot;fr-CA&quot;&gt;Fran&ccedil;ais&amp;nbsp;(Canada)&lt;/option&gt;&lt;option value=&quot;fr&quot;&gt;Fran&ccedil;ais&amp;nbsp;(France)&lt;/option&gt;&lt;option value=&quot;ga&quot;&gt;Gaeilge&lt;/option&gt;&lt;option value=&quot;gl&quot;&gt;galego&lt;/option&gt;&lt;option value=&quot;hr&quot;&gt;Hrvatski&lt;/option&gt;&lt;option value=&quot;id&quot;&gt;Indonesia&lt;/option&gt;&lt;option value=&quot;zu&quot;&gt;isiZulu&lt;/option&gt;&lt;option value=&quot;is&quot;&gt;&iacute;slenska&lt;/option&gt;&lt;option value=&quot;it&quot;&gt;Italiano&lt;/option&gt;&lt;option value=&quot;sw&quot;&gt;Kiswahili&lt;/option&gt;&lt;option value=&quot;lv&quot;&gt;latvie&scaron;u&lt;/option&gt;&lt;option value=&quot;lt&quot;&gt;lietuvi&#371;&lt;/option&gt;&lt;option value=&quot;hu&quot;&gt;magyar&lt;/option&gt;&lt;option value=&quot;ms&quot;&gt;Melayu&lt;/option&gt;&lt;option value=&quot;nl&quot;&gt;Nederlands&lt;/option&gt;&lt;option value=&quot;no&quot;&gt;norsk&lt;/option&gt;&lt;option value=&quot;uz&quot;&gt;o&lsquo;zbek&lt;/option&gt;&lt;option value=&quot;pl&quot;&gt;polski&lt;/option&gt;&lt;option value=&quot;pt-BR&quot;&gt;Portugu&ecirc;s&amp;nbsp;(Brasil)&lt;/option&gt;&lt;option value=&quot;pt-PT&quot;&gt;Portugu&ecirc;s&amp;nbsp;(Portugal)&lt;/option&gt;&lt;option value=&quot;ro&quot;&gt;rom&acirc;n&#259;&lt;/option&gt;&lt;option value=&quot;sq&quot;&gt;shqip&lt;/option&gt;&lt;option value=&quot;sk&quot;&gt;Sloven&#269;ina&lt;/option&gt;&lt;option value=&quot;sl&quot;&gt;sloven&scaron;&#269;ina&lt;/option&gt;&lt;option value=&quot;sr-Latn&quot;&gt;srpski (latinica)&lt;/option&gt;&lt;option value=&quot;fi&quot;&gt;Suomi&lt;/option&gt;&lt;option value=&quot;sv&quot;&gt;Svenska&lt;/option&gt;&lt;option value=&quot;vi&quot;&gt;Ti&#7871;ng Vi&#7879;t&lt;/option&gt;&lt;option value=&quot;tr&quot;&gt;T&uuml;rk&ccedil;e&lt;/option&gt;&lt;option value=&quot;el&quot;&gt;&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#940;&lt;/option&gt;&lt;option value=&quot;be&quot;&gt;&#1073;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1072;&#1103;&lt;/option&gt;&lt;option value=&quot;bg&quot;&gt;&#1073;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;ky&quot;&gt;&#1082;&#1099;&#1088;&#1075;&#1099;&#1079;&#1095;&#1072;&lt;/option&gt;&lt;option value=&quot;kk&quot;&gt;&#1179;&#1072;&#1079;&#1072;&#1179; &#1090;&#1110;&#1083;&#1110;&lt;/option&gt;&lt;option value=&quot;mk&quot;&gt;&#1084;&#1072;&#1082;&#1077;&#1076;&#1086;&#1085;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;mn&quot;&gt;&#1084;&#1086;&#1085;&#1075;&#1086;&#1083;&lt;/option&gt;&lt;option value=&quot;ru&quot;&gt;&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;&lt;/option&gt;&lt;option value=&quot;sr&quot;&gt;&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;&lt;/option&gt;&lt;option value=&quot;uk&quot;&gt;&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;&lt;/option&gt;&lt;option value=&quot;ka&quot;&gt;&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312;&lt;/option&gt;&lt;option value=&quot;hy&quot;&gt;&#1392;&#1377;&#1397;&#1381;&#1408;&#1381;&#1398;&lt;/option&gt;&lt;option value=&quot;iw&quot;&gt;&#1506;&#1489;&#1512;&#1497;&#1514;&lt;/option&gt;&lt;option value=&quot;ur&quot;&gt;&#1575;&#1585;&#1583;&#1608;&lt;/option&gt;&lt;option value=&quot;ar&quot;&gt;&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;&lt;/option&gt;&lt;option value=&quot;fa&quot;&gt;&#1601;&#1575;&#1585;&#1587;&#1740;&lt;/option&gt;&lt;option value=&quot;am&quot;&gt;&#4768;&#4635;&#4653;&#4763;&lt;/option&gt;&lt;option value=&quot;ne&quot;&gt;&#2344;&#2375;&#2346;&#2366;&#2354;&#2368;&lt;/option&gt;&lt;option value=&quot;mr&quot;&gt;&#2350;&#2352;&#2366;&#2336;&#2368;&lt;/option&gt;&lt;option value=&quot;hi&quot;&gt;&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;&lt;/option&gt;&lt;option value=&quot;as&quot;&gt;&#2437;&#2488;&#2478;&#2496;&#2479;&#2492;&#2494;&lt;/option&gt;&lt;option value=&quot;bn&quot;&gt;&#2476;&#2494;&#2434;&#2482;&#2494;&lt;/option&gt;&lt;option value=&quot;pa&quot;&gt;&#2602;&#2672;&#2588;&#2622;&#2604;&#2624;&lt;/option&gt;&lt;option value=&quot;gu&quot;&gt;&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;&lt;/option&gt;&lt;option value=&quot;or&quot;&gt;&#2835;&#2849;&#2876;&#2879;&#2822;&lt;/option&gt;&lt;option value=&quot;ta&quot;&gt;&#2980;&#2990;&#3007;&#2996;&#3021;&lt;/option&gt;&lt;option value=&quot;te&quot;&gt;&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;&lt;/option&gt;&lt;option value=&quot;kn&quot;&gt;&#3221;&#3240;&#3277;&#3240;&#3233;&lt;/option&gt;&lt;option value=&quot;ml&quot;&gt;&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;&lt;/option&gt;&lt;option value=&quot;si&quot;&gt;&#3523;&#3538;&#3458;&#3524;&#3517;&lt;/option&gt;&lt;option value=&quot;th&quot;&gt;&#3652;&#3607;&#3618;&lt;/option&gt;&lt;option value=&quot;lo&quot;&gt;&#3749;&#3762;&#3751;&lt;/option&gt;&lt;option value=&quot;my&quot;&gt;&#4121;&#4156;&#4116;&#4154;&#4121;&#4140;&lt;/option&gt;&lt;option value=&quot;km&quot;&gt;&#6017;&#6098;&#6040;&#6082;&#6042;&lt;/option&gt;&lt;option value=&quot;ko&quot;&gt;&#54620;&#44397;&#50612;&lt;/option&gt;&lt;option value=&quot;ja&quot;&gt;&#26085;&#26412;&#35486;&lt;/option&gt;&lt;option value=&quot;zh-CN&quot;&gt;&#31616;&#20307;&#20013;&#25991;&lt;/option&gt;&lt;option value=&quot;zh-TW&quot;&gt;&#32321;&#39636;&#20013;&#25991;&lt;/option&gt;&lt;option value=&quot;zh-HK&quot;&gt;&#32321;&#39636;&#20013;&#25991;&amp;nbsp;(&#39321;&#28207;)&lt;/option&gt;&lt;/select&gt;&lt;input type=&quot;hidden&quot; name=&quot;oldhl&quot; value=&quot;en&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;gl&quot; value=&quot;GB&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;m&quot; value=&quot;0&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;pc&quot; value=&quot;shp&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;continue&quot; value=&quot;https://www.google.com/&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;1&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Change language&quot;&gt;&lt;/form&gt;&lt;a href=&quot;https://policies.google.com/privacy?hl=en&amp;utm_source=ucb&quot;&gt;Privacy Policy&lt;/a&gt; &lt;a href=&quot;https://policies.google.com/terms?hl=en&amp;utm_source=ucb&quot;&gt;Terms of Service&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+09:54:22.991 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 174; columnNumber: 209; The element type &quot;link&quot; must be terminated by the matching end-tag &quot;&lt;/link&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

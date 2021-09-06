@@ -1,0 +1,26 @@
+<testsuite failures="0" name="features/testFeatures/test2.feature" skipped="0" tests="3" time="16.871345">
+  <testcase classname="features.testFeatures.test2" name="Create Patient Iteration '2002-04-16'" time="5.764707">
+    <system-out>Given url "https://google.com" ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.testFeatures.test2" name="Create Patient Iteration '2002-04-16'" time="5.278534">
+    <system-out>Given url "https://google.com" ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "https://google.com" ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.testFeatures.test2" name="Create Patient Iteration '2002-04-16'" time="5.828104">
+    <system-out>Given url "https://google.com" ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "https://google.com" ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "https://google.com" ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
